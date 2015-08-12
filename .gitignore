@@ -2,6 +2,14 @@
 __pycache__/
 *.py[cod]
 
+# generic files to ignore
+# backup files (*~) and vim swap file (.swp), MacOS dir file (.DS_Store)
+*~
+*.lock
+*.DS_Store
+.*.swp
+*.out
+
 # C extensions
 *.so
 
@@ -49,9 +57,17 @@ coverage.xml
 
 # Django stuff:
 *.log
+*.pyc
+*.db
 
 # Sphinx documentation
 docs/_build/
 
 # PyBuilder
 target/
+
+# IDE files to ignore (Netbeans, Eclipse)
+nbproject/private/
+.classpath
+.project
+.settings
