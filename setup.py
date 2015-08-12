@@ -29,5 +29,7 @@ setup(
     # Dependent packages (distributions)
     install_requires=[
         "djangorestframework",
+        "markdown",
+        "django-filter",
     ],
 )

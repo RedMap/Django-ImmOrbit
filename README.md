@@ -5,8 +5,8 @@
 Install using pip, including any optional packages you want...
 
 ````
+pip install git+git://github.com/RedMap/Django-ImmOrbit.git@master
 pip install djangorestframework
-git clone git@github.com:RedMap/Django-ImmOrbit.git
 pip install markdown       # Markdown support for the browsable API.
 pip install django-filter  # Filtering support
 ````

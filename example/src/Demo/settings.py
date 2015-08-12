@@ -146,7 +146,7 @@ INSTALLED_APPS = (
     'djangocms_teaser',
     'djangocms_video',
     'reversion',
-    'Demo'
+    'Demo',
     'ImmOrbit',
 )
 
