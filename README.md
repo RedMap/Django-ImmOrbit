@@ -6,9 +6,6 @@ Install using pip, including any optional packages you want...
 
 ````
 pip install --upgrade git+git://github.com/RedMap/Django-ImmOrbit.git@master
-pip install djangorestframework
-pip install markdown       # Markdown support for the browsable API.
-pip install django-filter  # Filtering support
 ````
 
 Add 'rest_framework' to your <INSTALLED_APPS> setting.
@@ -26,11 +23,18 @@ INSTALLED_APPS = (
 # settings.py
 
 ````
-REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
-}
+from ImmOrbit.settings import *
+````
+
+# urls.py
+
+````
+...
+from ImmOrbit.api import router
+...
+  url(r'^api/', include(router.urls)),
+  url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+...
+
+
 ````
