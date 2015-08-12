@@ -147,6 +147,7 @@ INSTALLED_APPS = (
     'djangocms_video',
     'reversion',
     'Demo'
+    'ImmOrbit',
 )
 
 LANGUAGES = (
