@@ -148,6 +148,9 @@ INSTALLED_APPS = (
     'reversion',
     'Demo',
     'ImmOrbit',
+    'rest_framework',
+    'markdown',
+    'django_filters',  
 )
 
 LANGUAGES = (
