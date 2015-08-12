@@ -150,7 +150,7 @@ INSTALLED_APPS = (
     'ImmOrbit',
     'rest_framework',
     'markdown',
-    'django_filters',  
+    'django_filters',
 )
 
 LANGUAGES = (
@@ -210,4 +210,12 @@ MIGRATION_MODULES = {
     'djangocms_picture': 'djangocms_picture.migrations_django',
     'djangocms_teaser': 'djangocms_teaser.migrations_django',
     'djangocms_video': 'djangocms_video.migrations_django'
+}
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
 }
