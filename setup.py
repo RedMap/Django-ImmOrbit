@@ -31,5 +31,6 @@ setup(
         "djangorestframework",
         "markdown",
         "django-filter",
+        "django-twilio",
     ],
 )
